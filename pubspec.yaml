@@ -1,6 +1,6 @@
 name: animation_transition
 description: "Transition animation for pages and widget"
-version: 0.0.3
+version: 0.0.4
 homepage: http://nio.ilove-soft.com
 
 environment:
