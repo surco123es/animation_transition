@@ -77,7 +77,11 @@ class HomePage extends StatelessWidget {
                   context: context,
                 );
               },
-              child: Text('All Transicion')),
+              child: const Text(
+                'All Transicion',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              )),
         ],
       ),
     );
