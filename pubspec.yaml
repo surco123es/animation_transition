@@ -1,0 +1,32 @@
+name: animation_transition
+description: "Transition animation for pages and widget"
+version: 0.0.3
+homepage: http://nio.ilove-soft.com
+
+environment:
+  sdk: ^3.5.3
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.animation_transition
+        pluginClass: AnimationTransitionPlugin
+      ios:
+        pluginClass: AnimationTransitionPlugin
+      linux:
+        pluginClass: AnimationTransitionPlugin
+      macos:
+        pluginClass: AnimationTransitionPlugin
+      windows:
+        pluginClass: AnimationTransitionPluginCApi
