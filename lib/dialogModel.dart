@@ -43,7 +43,7 @@ class _controllerGoALert {
     _controll[token]!.animation = controller;
   }
 
-  reverse({
+  Future<bool> reverse({
     required int token,
   }) async {
     if (!_controll[token]!.transition) {
@@ -64,6 +64,9 @@ class _controllerGoALert {
           reverse(token: token);
         }
       }
+      return true;
+    } else {
+      return false;
     }
   }
 
