@@ -46,7 +46,7 @@ class _controllerGoALert {
   Future<bool> reverse({
     required int token,
   }) async {
-    if (!_controll[token]!.transition) {
+    if (_controll.containsKey(token) && !_controll[token]!.transition) {
       _controll[token]!.transition = true;
       _controll[token]!.status = _controll[token]!.status == Status.reverse
           ? Status.start
