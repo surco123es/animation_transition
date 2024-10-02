@@ -43,6 +43,11 @@ class _controllerGoALert {
     _controll[token]!.animation = controller;
   }
 
+  Future<bool> reversePlay({required int token}) async {
+    await _controll[token]!.animation?.reverse();
+    return true;
+  }
+
   Future<bool> reverse({
     required int token,
   }) async {
