@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Animation transition',
       theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
                       ),
                       //
                       transition: TransitionType.ZoomIn,
-                      duration: Duration(milliseconds: 200),
+                      duration: const Duration(milliseconds: 200),
                       onStart: (token) {
                         tokenI = token;
                       },
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                     child: AllTransicion(),
                     //
                     transition: TransitionType.ZoomIn,
-                    duration: Duration(milliseconds: 200),
+                    duration: const Duration(milliseconds: 200),
                     onStart: (token) {
                       tokenI = token;
                     },
@@ -89,6 +89,8 @@ class HomePage extends StatelessWidget {
 }
 
 class AllTransicion extends StatelessWidget {
+  const AllTransicion({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

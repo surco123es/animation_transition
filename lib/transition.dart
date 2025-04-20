@@ -1,5 +1,3 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 
 import 'dialogModel.dart';
@@ -22,7 +20,7 @@ class TransitionPage extends StatefulWidget {
 }
 
 class _TransitionPageState extends State<TransitionPage> {
-  Widget wdAnimated = Text('');
+  Widget wdAnimated = const Text('');
   bool load = false;
 
   void addController(AnimationController p0) {
